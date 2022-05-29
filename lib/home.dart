@@ -9,6 +9,7 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Hello'),
       ),
+      body: Container(),
     );
   }
 }
