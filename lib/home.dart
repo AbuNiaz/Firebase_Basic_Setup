@@ -18,10 +18,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('Hello'),
       ),
       body: StreamBuilder(
+          stream: _country.snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
-        if (streamSnapshot.hasData) {}
-        return const Center();
-      }),
+            if (streamSnapshot.hasData) {}
+            return const Center();
+          }),
     );
   }
 }
